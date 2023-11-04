@@ -114,11 +114,10 @@ body{
 
 /* Estilos de las cards */
 
-
-
 .no-btn-card,
 .btn-card{
-    padding: 30px;
+    padding: 35px;
+    padding-top: 45px;
     margin: 10px;
     height: 445px;
     min-width: 50px;
@@ -136,9 +135,6 @@ body{
     background-color: rgb(255, 255, 255);
 }
 
-.btn-card{
-    
-}
 
 .btn-card-long{
     background-color: white;
@@ -195,9 +191,9 @@ body{
     background-color: rgb(219, 219, 219);
     border: none;
     padding: 0;
-    width: 100%;
-    height: 60px;
-    font-size: 30px;
+    width: 50%;
+    height: 50px;
+    font-size: 19px;
     font-weight: 500;
     border-radius: 15px;
     cursor: pointer;
@@ -208,6 +204,11 @@ body{
 .btn-card button:hover,
 .btn-card-long button:hover {
     background-color: rgb(185, 185, 185);
+}
+
+.btn-card h2{
+    font-family: 'Roboto', sans-serif;
+    font-size:large;
 }
 
 
@@ -261,7 +262,6 @@ footer {
 footer p{
     margin: 0px 30px;
     margin-top: 20px;
-    
     font-size: 11px;
     font-weight: 300;
 }
@@ -294,13 +294,14 @@ footer p{
     border-radius: 20px;
     align-items: center ;
     justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.253) 0px 10px 20px;
 }
 
 .contactanos .info{
     display: flex;
     flex-direction: column;
     width: auto;
-    max-width: 369px;
+    
     align-items: center;
     text-align: center;
 }
@@ -356,20 +357,23 @@ footer p{
     font-size: 15px;
     border: 1px solid #dbdbdb;
     margin-bottom: 20px;
-    border-radius: 3px;
+    border-radius: 10px;
     outline: 0px;
     width: 80%;
     max-width: 365px;
+    box-shadow: rgba(0, 0, 0, 0.155) 0px 0px 20px;
 }
 
 .contactanos form .campo-L, textarea{
     height: 250px;
     width: 80%;
     max-width: 365px;
+    box-shadow: rgba(0, 0, 0, 0.155) 0px 0px 20px;
 }
 
 .contactanos form textarea{
     width: 100%;
+    
 }
 
 .contactanos .btn-enviar{
@@ -380,7 +384,7 @@ footer p{
     width: 120px;
     height: 40px;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 500;
     border-radius: 15px;
     cursor: pointer;
     transition: 0.2s ease-in-out;
@@ -398,8 +402,6 @@ footer p{
     color: white;
     font-family: 'Roboto', sans-serif;
     margin: 0px 20px;
-    margin-top: 40px;
-    
     text-align: center;
 }
 
@@ -420,7 +422,7 @@ footer p{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    margin-bottom: 40px;
 }  
 
 .section{
@@ -431,9 +433,13 @@ footer p{
 .promotions-section .section{
     color: white;
     font-family: 'Roboto', sans-serif;
-    margin-top: 60px;
+    margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
+}
+
+.promotions-section h2{
+    font-size: 30px;
 }
 
 .cards{
@@ -443,86 +449,29 @@ footer p{
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.page-title{
+    background-image: linear-gradient(to left, 
+    rgb(125, 52, 52),
+    rgb(94, 41, 41),
+    rgb(84, 36, 36),
+    rgb(84, 36, 36),
+    rgb(94, 41, 41),
+    rgb(125, 52, 52)
+    );
+    padding: 30px 0px;
+}
+
+
+/*=================================== MEDIA QUERYS =============================*/
+
+
+@media (min-width:977px){
+    .contactanos{
+        justify-content: space-between;
+        max-width: 1225px;
+    }
+    
+}
 
 
 @media (min-width:778px){
@@ -562,6 +511,7 @@ footer p{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        box-shadow: rgba(0, 0, 0, 0.253) 0px 10px 20px;
     }
     
     
@@ -588,6 +538,7 @@ footer p{
 
     .contactanos .info{
         margin-top: 20px;
+        width: 50%;
     }
 
     .contactanos form{
@@ -612,7 +563,6 @@ footer p{
         font-family: 'Roboto', sans-serif;
         margin: 0px 20px;
         margin-top: 20px;
-    
         text-align: center;
     }
     
@@ -620,9 +570,8 @@ footer p{
     .promotions-section .section{
         color: white;
         font-family: 'Roboto', sans-serif;
-        margin-top: 60px;
-        margin-bottom: 20px;
-        
+        margin: 20px 0px;
+        margin-bottom:40px;
     }
     
     .cards{
@@ -670,6 +619,10 @@ footer p{
         align-items:start;
         width: 94%;
         padding-top: 20px;
+    }
+
+    .contactanos .info{
+        width: 50%;
     }
 
     .cards{
